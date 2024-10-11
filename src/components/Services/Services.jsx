@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Services.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  const isMobile = window.innerWidth <= 768; // Example mobile breakpoint
   return (
     <>
-      <div className="service-bg">
-        <div>
+      <div className="service-bg" data-aos={isMobile ? "fade-up" : "fade"}>
+        <div data-aos={isMobile ? "fade-up" : "fade"}>
           <h2>Our Services</h2>
           <p>
             Meet all your financial requirements <br /> with our <br />
@@ -14,7 +20,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="services">
+      <div className="services" data-aos={isMobile ? "fade-up" : "fade"}>
         <div>
           <p>Our Services</p>
           <h2>Our Offerings</h2>
@@ -24,7 +30,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="services2">
+      <div className="services2" data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="service-details-main">
           <div className="services-details">
             <div>
@@ -45,10 +51,10 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
-          <div className="services-details">
+          <div className="services-details" data-aos={isMobile ? "fade-up" : "fade"}>
             <div>
               <img src="/bl.webp" alt="" />
             </div>
@@ -67,10 +73,10 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
-          <div className="services-details">
+          <div className="services-details" data-aos={isMobile ? "fade-up" : "fade"}>
             <div>
               <img src="/hl.webp" alt="" />
             </div>
@@ -78,7 +84,8 @@ const Services = () => {
               <h2>​Home Loans</h2> <br />
               <p>
                 Are you looking for a means to <br /> purchase your dream home?
-              </p>​ <br />
+              </p>
+              ​ <br />
               <Link to="/service-details">
                 {" "}
                 <button>
@@ -87,19 +94,20 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
         </div>
         <div className="service-details-main">
-          <div className="services-details">
+          <div className="services-details" data-aos={isMobile ? "fade-up" : "fade"}>
             <div>
               <img src="/ins.jpg" alt="" />
             </div>
             <div className="services-details-div">
               <h2>Insurance Loans</h2> <br />
               <p>
-              Are you looking for an attractive <br /> life, home, or car insurance policy?
+                Are you looking for an attractive <br /> life, home, or car
+                insurance policy?
               </p>
               ​ <br />
               <Link to="/service-details">
@@ -110,17 +118,18 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
-          <div className="services-details">
+          <div className="services-details" data-aos={isMobile ? "fade-up" : "fade"}>
             <div>
               <img src="/ed.webp" alt="" />
             </div>
             <div className="services-details-div">
               <h2>Education Loans</h2> <br />
               <p>
-              Looking for funds to chase <br /> your goal of higher education abroad?
+                Looking for funds to chase <br /> your goal of higher education
+                abroad?
               </p>
               ​ <br />
               <Link to="/service-details">
@@ -131,19 +140,20 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
-          <div className="services-details">
+          <div className="services-details" data-aos={isMobile ? "fade-up" : "fade"}>
             <div>
               <img src="/car.webp" alt="" />
             </div>
             <div className="services-details-div">
               <h2>Car Loans</h2> <br />
               <p>
-              Have your eyes set <br /> on a car or a vehicle?
-              </p>​ <br />
-              <Link to="/service-details">
+                Have your eyes set <br /> on a car or a vehicle?
+              </p>
+              ​ <br />
+              <Link to="/service-details" >
                 {" "}
                 <button>
                   Know More &nbsp;{" "}
@@ -151,19 +161,20 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
         </div>
         <div className="service-details-main">
-          <div className="services-details">
+          <div className="services-details" data-aos={isMobile ? "fade-up" : "fade"}>
             <div>
               <img src="/ccl.webp" alt="" />
             </div>
             <div className="services-details-div">
               <h2> Credit Card Loans</h2> <br />
               <p>
-              Want to apply for a credit <br /> card but are confused given <br /> the choices available?
+                Want to apply for a credit <br /> card but are confused given{" "}
+                <br /> the choices available?
               </p>
               ​ <br />
               <Link to="/service-details">
@@ -174,18 +185,16 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
-          <div className="services-details">
+          <div className="services-details" data-aos={isMobile ? "fade-up" : "fade"}>
             <div>
               <img src="/cl.webp" alt="" />
             </div>
             <div className="services-details-div">
               <h2>Corporate Loans</h2> <br />
-              <p>
-              Are you planning to expand your business to another sector?
-              </p>
+              <p>Are you planning to expand your business to another sector?</p>
               ​ <br />
               <Link to="/service-details">
                 {" "}
@@ -195,18 +204,19 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
-          <div className="services-details">
+          <div className="services-details" data-aos={isMobile ? "fade-up" : "fade"}>
             <div>
               <img src="/gl.webp" alt="" />
             </div>
             <div className="services-details-div">
               <h2>Gold Loans</h2> <br />
               <p>
-              Are you interested in <br /> obtaining a quick gold loan?
-              </p>​ <br />
+                Are you interested in <br /> obtaining a quick gold loan?
+              </p>
+              ​ <br />
               <Link to="/service-details">
                 {" "}
                 <button>
@@ -215,7 +225,7 @@ const Services = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Carreers.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
 const Carreers = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  const isMobile = window.innerWidth <= 768; // Example mobile breakpoint
   return (
     <>
-      <div className="careers-welcome">
+      <div className="careers-welcome" data-aos={isMobile ? "fade-up" : "fade"}>
         <div>
           <h1>Careers</h1>
           <p>
@@ -13,7 +19,7 @@ const Carreers = () => {
           </p>
         </div>
       </div>
-      <div className="careers">
+      <div className="careers" data-aos={isMobile ? "fade-up" : "fade"}>
         <p>What We're Offering</p>
         <h2>Checkout Digi Loans new job opportunities</h2>
       </div>
@@ -37,7 +43,7 @@ const Carreers = () => {
           </div>
         </div>
       </div>
-      <div className="career-details-main">
+      <div className="career-details-main" data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="career-design"></div>
         <div className="careers-details">
           <div>
@@ -57,7 +63,7 @@ const Carreers = () => {
           </div>
         </div>
       </div>
-      <div className="career-details-main">
+      <div className="career-details-main" data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="career-design"></div>
         <div className="careers-details">
           <div>
@@ -77,7 +83,7 @@ const Carreers = () => {
           </div>
         </div>
       </div>
-      <div className="abt-2">
+      <div className="abt-2" data-aos={isMobile ? "fade-up" : "fade"}>
         <div>
           <p>About Rooted Revenue Financial Service</p>
           <h2>

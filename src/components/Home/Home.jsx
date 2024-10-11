@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import EmiCalci from "./EmiCalci";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  const isMobile = window.innerWidth <= 768; // Example mobile breakpoint
+
   return (
     <>
-      <section id="offerings">
+      <section id="offerings" data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="Offerings">
           <h3>What We're Offering</h3>
           <h2> Choose from a wide range of financial offerings </h2>
         </div>
         <div className="offerings-main">
-          <div className="loan-offer">
+          <div className="loan-offer" data-aos={isMobile ? "fade-up" : "fade"}>
             <img src="/Loan.webp" alt="" />
             <div className="loan-offer-main">
               <h2>Personal Loan</h2>
@@ -31,7 +38,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="loan-offer">
+          <div className="loan-offer" data-aos={isMobile ? "fade-up" : "fade"}>
             <img src="/business-loan.jpg" alt="" />
             <div className="loan-offer-main">
               <h2>Business Loan</h2>
@@ -50,7 +57,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="loan-offer">
+          <div className="loan-offer" data-aos={isMobile ? "fade-up" : "fade"}>
             <img src="/home-loan.jpg" alt="" />
             <div className="loan-offer-main">
               <h2>House Loan</h2>
@@ -66,12 +73,12 @@ const Home = () => {
                     style={{ position: "relative", top: "5px" }}
                   />
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      <section id="records">
+      <section id="records" data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="records">
           <div>
             <h2>4</h2>
@@ -93,7 +100,7 @@ const Home = () => {
       </section>
       <br />
       <br />
-      <section id="OurBenefits">
+      <section id="OurBenefits" data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="ourBenefits">
           <div>
             <p style={{ color: "#020399" }}>OUR BENEFITS</p>
@@ -139,7 +146,7 @@ const Home = () => {
       </section>
       <br />
       <br />
-      <section id="customer">
+      <section id="customer" data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="customerBg">
           <div className="customer-details">
             <h2>
@@ -198,12 +205,12 @@ const Home = () => {
         </div>
       </section>
       <br />
-      <section id="emiCalci">
+      <section id="emiCalci" data-aos={isMobile ? "fade-up" : "fade"}>
         <EmiCalci />
       </section>
       <br />
       <br />
-      <section id="management">
+      <section id="management" data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="management-main">
           <h3>Management</h3>
           <div className="management">

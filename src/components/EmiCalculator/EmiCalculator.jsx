@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./EmiCalci.css";
 import PersonalLoanCalci from "../Home/PersonaLoanCalci";
 import HomeLoan from "../Home/HomeLoan";
 const EmiCalculator = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  const isMobile = window.innerWidth <= 768; // Example mobile breakpoint
+
   return (
     <>
-      <div className="emi-welcome">
+      <div className="emi-welcome" data-aos={isMobile ? "fade-up" : "fade"}>
         <div>
           <h1>Loan EMI Calculator</h1>
           <p>Funds for addressing your immediate financial needs?</p>
         </div>
       </div>
-      <div className="pl-emi">
+      <div className="pl-emi" data-aos={isMobile ? "fade-up" : "fade"}>
         <h2>Personal Loan Calculator </h2>
         <br />
         <p>
@@ -24,8 +31,8 @@ const EmiCalculator = () => {
           details.
         </p>
       </div>
-      <PersonalLoanCalci />
-      <div className="pl-emi">
+      <PersonalLoanCalci data-aos={isMobile ? "fade-up" : "fade"}/>
+      <div className="pl-emi" data-aos={isMobile ? "fade-up" : "fade"}>
         <h2>Home Loan Calculator</h2>
         <br />
         <p>
@@ -34,7 +41,7 @@ const EmiCalculator = () => {
           time.
         </p>
       </div>
-      <HomeLoan />
+      <HomeLoan data-aos={isMobile ? "fade-up" : "fade"}/>
     </>
   );
 };

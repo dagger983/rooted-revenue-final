@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./About.css";
 import LendingPartners from "./LendingPartners";
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  const isMobile = window.innerWidth <= 768; // Example mobile breakpoint
   return (
     <>
-      <div className="about">
+      <div className="about"  data-aos={isMobile ? "fade-up" : "fade"}>
         <h1>About Us</h1>
         <br />
         <p>Loans that bring your dream to life</p>
       </div>
-      <div className="abt-2">
+      <div className="abt-2"  data-aos={isMobile ? "fade-up" : "fade"}>
         <div>
           <p>About Rooted Revenue Financial Service</p>
           <h2>
@@ -43,7 +49,7 @@ const About = () => {
           <img src="/abt-2.png" />
         </div>
       </div>
-      <div className="abt-3">
+      <div className="abt-3"  data-aos={isMobile ? "fade-up" : "fade"}>
         <div>
           <h2>Our Vision & Mission</h2>
           <p>
@@ -69,7 +75,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <section id="management">
+      <section id="management"  data-aos={isMobile ? "fade-up" : "fade"}>
         <div className="management-main">
           <h3>Management</h3>
         <div className="management">
@@ -100,7 +106,7 @@ const About = () => {
         </div>
       
       </section>
-      <div className="abt-4">
+      <div className="abt-4"  data-aos={isMobile ? "fade-up" : "fade"}>
         <LendingPartners/>
       </div>
     </>
