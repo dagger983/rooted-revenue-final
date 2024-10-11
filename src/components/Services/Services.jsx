@@ -1,7 +1,7 @@
 import React from "react";
 import "./Services.css";
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <>
@@ -37,12 +37,15 @@ const Services = () => {
                 needs?
               </p>
               ​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
           <div className="services-details">
@@ -56,12 +59,15 @@ const Services = () => {
                 needs?
               </p>
               ​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
           <div className="services-details">
@@ -73,12 +79,15 @@ const Services = () => {
               <p>
                 Are you looking for a means to <br /> purchase your dream home?
               </p>​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
         </div>
@@ -93,12 +102,15 @@ const Services = () => {
               Are you looking for an attractive <br /> life, home, or car insurance policy?
               </p>
               ​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
           <div className="services-details">
@@ -111,12 +123,15 @@ const Services = () => {
               Looking for funds to chase <br /> your goal of higher education abroad?
               </p>
               ​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
           <div className="services-details">
@@ -128,12 +143,15 @@ const Services = () => {
               <p>
               Have your eyes set <br /> on a car or a vehicle?
               </p>​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
         </div>
@@ -148,12 +166,15 @@ const Services = () => {
               Want to apply for a credit <br /> card but are confused given <br /> the choices available?
               </p>
               ​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
           <div className="services-details">
@@ -166,12 +187,15 @@ const Services = () => {
               Are you planning to expand your business to another sector?
               </p>
               ​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
           <div className="services-details">
@@ -183,12 +207,15 @@ const Services = () => {
               <p>
               Are you interested in <br /> obtaining a quick gold loan?
               </p>​ <br />
-              <button>
-                Know More &nbsp; &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "3px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
         </div>

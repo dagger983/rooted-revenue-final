@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import EmiCalci from "./EmiCalci";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -20,12 +20,15 @@ const Home = () => {
                 House LoanNeed funds for addressing <br />
                 your immediate financial needs?
               </p>
-              <button>
-                Know More &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "5px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+              </Link>
             </div>
           </div>
           <div className="loan-offer">
@@ -36,12 +39,15 @@ const Home = () => {
                 ​Excited to turn your entrepreneurial <br />
                 dream or business into a success?
               </p>
-              <button>
-                Know More &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "5px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+              </Link>
             </div>
           </div>
           <div className="loan-offer">
@@ -52,12 +58,15 @@ const Home = () => {
                 Are you looking for a means to <br />
                 purchase your dream home?
               </p>
-              <button>
-                Know More &nbsp;{" "}
-                <FaArrowRightLong
-                  style={{ position: "relative", top: "5px" }}
-                />
-              </button>
+              <Link to="/service-details">
+                {" "}
+                <button>
+                  Know More &nbsp;{" "}
+                  <FaArrowRightLong
+                    style={{ position: "relative", top: "5px" }}
+                  />
+                </button>
+                </Link>
             </div>
           </div>
         </div>
@@ -197,33 +206,32 @@ const Home = () => {
       <section id="management">
         <div className="management-main">
           <h3>Management</h3>
-        <div className="management">
-          <div>
-            <img src="/founder_of_rooted revenue.png" alt="" />
-          </div>
-          <div className="manage-details">
-            <h2>Jayaprakash.K</h2>
-            <br />
-            <p>
-              He is the founder of Rooted Revenue Financial Services. Through
-              his <br />
-              hard work, team support, dedication, and experience, he launched{" "}
+          <div className="management">
+            <div>
+              <img src="/founder_of_rooted revenue.png" alt="" />
+            </div>
+            <div className="manage-details">
+              <h2>Jayaprakash.K</h2>
               <br />
-              RRFS in 2024. His career began as a credit manager, and over time,{" "}
-              <br />
-              he climbed the corporate ladder. With seven years of experience in{" "}
-              <br />
-              the retail loans and insurance sector, he ventured into <br />
-              entrepreneurship. He started the company with a small team of
-              three <br />
-              members and now manages nearly 30 employees. His vision is to
-              expand <br />
-              Rooted Revenue Financial Services to all states in India
-            </p>
+              <p>
+                He is the founder of Rooted Revenue Financial Services. Through
+                his <br />
+                hard work, team support, dedication, and experience, he launched{" "}
+                <br />
+                RRFS in 2024. His career began as a credit manager, and over
+                time, <br />
+                he climbed the corporate ladder. With seven years of experience
+                in <br />
+                the retail loans and insurance sector, he ventured into <br />
+                entrepreneurship. He started the company with a small team of
+                three <br />
+                members and now manages nearly 30 employees. His vision is to
+                expand <br />
+                Rooted Revenue Financial Services to all states in India
+              </p>
+            </div>
           </div>
         </div>
-        </div>
-      
       </section>
     </>
   );
