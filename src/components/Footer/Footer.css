@@ -1,0 +1,147 @@
+.footer-1 {
+  background-image: url("/footerbg.jpg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer-1 h1 {
+  color: white;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+.footer-1 p {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+}
+
+.footer-1 button {
+  width: 200px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-1 button:hover {
+  background-color: black;
+  color: white;
+}
+.footer-2 {
+  background-color: black;
+  height: 100%;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.footer-details img {
+  height: 150px;
+}
+
+.footer-details-main {
+  display: flex;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.footer-details2 h2 {
+  font-size: 32px;
+}
+
+.footer-details2 li {
+  font-size: 24px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer-details3 h2 {
+  font-size: 32px;
+}
+
+.footer-details3 p {
+  font-size: 24px;
+  margin-top: 10px;
+  line-height: 36px;
+  
+}
+
+.footer-details4-main {
+  display: flex;
+}
+.footer-details4-main div {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  margin-right: 30px;
+  margin-top: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-details4-main img {
+  height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-1 h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .footer-1 p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .footer-2 {
+    flex-direction: column;
+  }
+  .footer-details-main {
+    display: flex;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .footer-details img {
+    height: 90px;
+  }
+  .footer-details2 h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .footer-details2 li {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .footer-details3 h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .footer-details3 p {
+    font-size: 18px;
+
+    line-height: 24px;
+  }
+  .footer-details4 {
+    margin-top: 20px;
+  }
+}

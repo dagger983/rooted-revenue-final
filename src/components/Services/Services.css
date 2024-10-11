@@ -1,0 +1,109 @@
+.service-bg {
+  background-image: url("/servicesbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 443px;
+  color: white;
+  padding: 30px;
+}
+.service-bg div {
+  float: left;
+  margin: 90px;
+}
+.service-bg h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.service-bg p {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .service-bg div {
+    float: left;
+    margin: 0px;
+  }
+  .service-bg {
+    background-image: url("/servicesbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+.services2 {
+  background-color: rgb(230, 230, 230);
+  height: 100%;
+  margin: 30px;
+  padding: 30px;
+}
+
+.service-details-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services {
+  text-align: center;
+  padding: 30px;
+}
+
+.services-details {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services-details:hover {
+  transform: scale(1.1);
+}
+
+.services-details img {
+  height: 331px;
+  width: 296px;
+}
+
+.services p {
+  margin: 10px 10px;
+  font-size: 24px;
+}
+
+.services h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.services-details h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+.services-details p {
+  font-size: 18px;
+  font-weight: 200;
+}
+.services-details-div {
+  background-color: white;
+  padding: 30px;
+  width: 296px;
+  position: relative;
+  bottom: 80px;
+}
+
+.services-details-div button {
+  padding: 15px;
+  border: none;
+  color: white;
+  background-color: #02024b;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .service-details-main {
+    flex-direction: column;
+  }
+}

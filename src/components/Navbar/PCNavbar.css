@@ -1,0 +1,95 @@
+.pcnavbar{
+    display: flex;
+    padding:30px;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+    background-color: white;
+}
+
+.pcnavbar2{
+    display: flex;
+    margin-top:50px;
+
+}
+
+.pcnavbar2 p{
+    cursor: pointer;
+    font-size:18px;
+    margin-right:30px;
+    color:rgb(85, 85, 85);
+}
+.pcnavbar2 p:hover{
+    color: #020399;
+}
+.pcnavbar2 button{
+    padding:10px;
+    width:100px;
+    position: relative;
+    bottom:10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color:#020399;
+}
+
+.pcnavbar2 button:hover{
+    background-color: black;
+}
+
+.mobNav{
+    padding:10px;
+    
+}
+.mobNav img{
+    height:50px;
+}
+
+.mobNav-main{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-between;
+}
+
+.menu-icon{
+    cursor: pointer;
+    color: #020399;
+    padding:20px;
+    font-size:24px;
+}
+
+.mobNav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+    background-color: white; /* Background color for the navbar */
+  }
+  
+  .mobNav img {
+    height: 40px; /* Adjust the height of the logos */
+    margin-right: 10px; /* Space between logos */
+  }
+  
+  .menu-icon {
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px; /* Width of the sidebar */
+    height: 100%;
+    background-color: white; /* Background color of the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    padding: 20px; /* Padding for sidebar content */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  .sidebar p {
+    margin: 10px 0; /* Space between items */
+    cursor: pointer;
+  }
+  

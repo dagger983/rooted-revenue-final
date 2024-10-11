@@ -1,0 +1,46 @@
+.emi-welcome{
+    background-image:url("/emibg.jpg");
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:50px;
+    color:white;
+}
+.emi-welcome div{
+    margin:50px;
+    padding:50px;
+}
+.emi-welcome h1{
+    font-size:48px;
+}
+
+.emi-welcome p{
+    font-size:24px;
+}
+
+
+@media screen and (max-width:768px){
+    .emi-welcome{
+        padding:30px;
+        height:300px;
+    }
+    .emi-welcome div{
+        margin:0px;
+        padding:0px;
+    }
+}
+
+
+.pl-emi{
+    margin-top:30px;
+    text-align: center;
+}
+
+.pl-emi h2{
+    font-size:48px;
+}
+
+.pl-emi p{
+    font-size:24px;
+    font-weight:300;
+}

@@ -1,0 +1,140 @@
+.about {
+  background-image: url("/abt.png");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+
+.about p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .about h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .about p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .about {
+    background-image: url("/abt.png");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.abt-2 img {
+  height: 700px;
+}
+
+.abt-2 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.abt-2 p {
+  font-size: 18px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.abt-2 p {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.abt-2 h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .abt-2 img {
+    height: 300px;
+    
+  }
+  .abt-2 {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    
+  }
+  .abt-2 p {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .abt-2 p {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  
+  .abt-2 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+.abt-3 {
+  background-image: url("/about us.jpg");
+  height: 400px;
+  background-size: cover;
+  margin: 30px;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 30px;
+}
+
+.abt-3 div {
+  float: right;
+}
+
+.abt-3 h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.abt-3 p {
+  font-size: 18px;
+}
+
+
+@media screen and (max-width:768px){
+    .abt-3 {
+      padding:50px;
+        height: 600px;
+      border-radius:20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+}

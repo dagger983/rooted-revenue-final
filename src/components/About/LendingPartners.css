@@ -1,0 +1,45 @@
+/* LendingPartners.css */
+
+.lending-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Background color */
+  }
+  .partner-subtitle{
+    text-align: center;
+    color: #020399;
+    font-size:21px;
+  }
+  .partner-title {
+    margin-bottom: 20px;
+    font-size: 48px;
+    text-align: center;
+    color: black; /* Title color */
+  }
+  
+  .partners-grid {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr); /* 4 logos per row on PC */
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding:30px;
+  }
+  
+  .partners-grid img {
+    width: 100%;
+    max-width: 300px; /* Max width for logos */
+    object-fit: contain; /* Ensure logos maintain aspect ratio */
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .partners-grid {
+      grid-template-columns: repeat(2, 1fr); 
+      margin-left:0px;/* 2 logos per row on mobile */
+    }
+  }
+  

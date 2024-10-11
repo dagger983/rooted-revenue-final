@@ -1,0 +1,89 @@
+.admin-container {
+    padding: 20px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Center the container vertically */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  .login-title {
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+  }
+  
+  .login-form {
+    background-color: white; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Spacing between form groups */
+  }
+  
+  .form-label {
+    display: block; /* Block display for labels */
+    margin-bottom: 8px;
+    color: #555; /* Medium gray color for labels */
+  }
+  
+  .form-input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+  }
+  
+  .form-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .login-button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding for button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger text */
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .error-message {
+    color: red; /* Red color for error messages */
+    margin-top: 10px; /* Space above error message */
+  }
+  
