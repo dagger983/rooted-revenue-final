@@ -1,0 +1,37 @@
+.serviceDetails{
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.serviceDetails h1{
+    font-size:72px;
+    margin-bottom:30px;
+}
+
+.serviceDetails h2{
+    font-weight: 400;
+    margin-bottom:30px;
+}
+
+.serviceDetails p{
+    font-weight: 200;
+    line-height:40px;
+    margin-bottom:30px;
+}
+
+
+@media screen and (max-width:768px){
+    .serviceDetails{
+        flex-direction: column;
+    }
+    .serviceDetails img{
+        height:300px;
+        width:300px;
+    }
+    .serviceDetails h1{
+        font-size:48px;
+        margin-bottom:30px;
+    }
+    
+}

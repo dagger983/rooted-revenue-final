@@ -14,6 +14,7 @@ import Contact from "./components/ContactUs/Contact";
 import Login from "./components/Login/Login";
 import Register from "./components/Login/Register";
 import Admin from "./components/UserData/Admin"
+import PersonalLoan from "./components/ServiceDetails/PersonalLoan";
 const App = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
@@ -108,7 +109,16 @@ const App = () => {
             </>
           }
         />
- 
+ <Route
+          path="/service-details"
+          element={
+            <>
+              {isMobile ? <MobNavbar /> : <PCNavbar />}
+              <PersonalLoan />
+              <Footer/>
+            </>
+          }
+        />
       </Routes>
     </>
   );
