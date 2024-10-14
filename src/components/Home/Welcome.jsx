@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
 import Slider from "react-slick";
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import { Link } from "react-router-dom";
 const Welcome = () => {
   const settings = {
     dots: false, 
@@ -50,10 +50,12 @@ const Welcome = () => {
             <div className="welcome-content">
               <h2>{slide.title}</h2>
               <h3>{slide.subtitle}</h3>
+              <Link to="/contact-us">
               <button>
-                Apply For a Loan &nbsp;
+               Apply For a Loan  &nbsp;
                 <FaArrowRightLong style={{ position: "relative", top: "5px" }} />
               </button>
+              </Link>
               <div className="welcome-content2">
                 <div>
                   <img src={slide.quickCashImg} alt="Quick Cash" />
