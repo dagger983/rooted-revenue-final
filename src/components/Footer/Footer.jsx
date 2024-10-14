@@ -2,13 +2,15 @@ import React from "react";
 import "./Footer.css";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
       <div className="footer-1">
         <h1>Get Quick Personal Loans</h1>
         <p>Get personal loans without hassle-free process</p>
-        <button>Apply Now</button>
+      <Link to="/contact-us"><button>Apply Now</button>
+      </Link>  
       </div>
       <div className="footer-2">
         <div className="footer-details">
