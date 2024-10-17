@@ -64,7 +64,7 @@ const Home = () => {
       </Helmet>
       
           <h3>What We're Offering</h3>
-          <h2> Choose from a wide range of financial offerings </h2>
+          <h1 style={{fontWeight:"300",fontSize:"32px"}}> Choose from a wide range of financial offerings </h1>
         </div>
         <div className="offerings-main">
           <div className="loan-offer" data-aos={isMobile ? "fade-up" : "fade"}>
