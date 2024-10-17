@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /account/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Allow all other content to be crawled
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.rootedrevenuefinance.com/sitemap.xml 
