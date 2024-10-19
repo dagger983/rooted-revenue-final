@@ -80,6 +80,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div>
+        <p style={{textAlign:"center"}}>Designed and Developed By <a style={{cursor:"pointer"}} href="https://rategle-tech.web.app/">Rategle Technologies</a></p>
+      </div>
     </>
   );
 };
